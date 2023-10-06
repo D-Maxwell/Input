@@ -1,10 +1,18 @@
 :root{
-  /* --clr-bg: rgb(30,30,30);
-  --clr-input-bg: rgb(40,40,40); */
   --clr-bg: white;
   --clr-input-off: none; /*orange*/
   --clr-input-on: blue;
+
+  @media (prefers-color-scheme: dark) {
+    --clr-bg: rgb(30,30,30);
+    --clr-input-bg: rgb(40,40,40);
+    --clr-input-on: royalblue;
+
+    color: white;
+  }
 }
+
+
 
 
 html, body{
@@ -24,6 +32,12 @@ body{
 
 *{
   font-family: "bahnschrift";
+}
+
+input{
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
 }
 
 
